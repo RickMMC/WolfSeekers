@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="app web para wolf seekers">
+	<meta name="author"      content="Wolf Seeker's Team">
+	
+	<title>Wolf Seekers-Regístrate</title>
+
+	<link rel="shortcut icon" href="/libs/assets/images/logo ws low.jpg">
+	
+	<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+	<link rel="stylesheet" href="/libs/assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/libs/assets/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/libs/assets/css/bootstrap-theme.css" media="screen" >
+	<link rel="stylesheet" href="/libs/assets/css/main.css">
+</head>
+
+<body>
+<!-- barra de navegación-->
+<body class="home">
+	<div class="navbar navbar-inverse navbar-fixed-top headroom" >
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+				<a class="navbar-brand" href="/"><img src="//libs/assets/images/logo ws low50.jpg ws low50.jpg" alt="WolfSeekers">Wolf Seekers</a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav pull-right">
+					<li><a href="/">Home</a></li>
+					<li><a href="/about">Acerca de nosotros</a></li>
+					<li><a href="/contact">Contáctanos</a></li>
+				</ul>
+			</div>
+		</div>
+	</div> 
+<!-- fin de barra de navegación-->
+	<header id="head" class="secondary"></header>
+
+	<div class="container">
+
+		<ol class="breadcrumb">
+			<li><a href="/">Home</a></li>
+			<li class="active">Registrar cuenta nueva</li>
+		</ol>
+
+		<div class="row">
+			
+			<!-- Article main content -->
+			<article class="col-xs-12 maincontent">
+				<header class="page-header">
+					<h1 class="page-title">Regístrate</h1>
+				</header>
+				
+				<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<h3 class="thin text-center">Crea una nueva cuenta</h3>
+							<p class="text-center text-muted">Si ya tienes un perfil puedes ingresar desde este link. <a href="/signin">Iniciar sesión</a></p>
+							<hr>
+
+							<form action="/signup" method="post">
+								<div class="top-margin">
+									<label>Nombre</label>
+									<input type="text" class="form-control" name="name" required>
+								</div>
+								<div class="top-margin">
+									<label>Apellidos</label>
+									<input type="text" class="form-control" name="lastname" required>
+								</div>
+								<div class="top-margin">
+									<label>Correo electrónico<span class="text-danger">*</span></label>
+									<input type="email" class="form-control" name="email" required>
+								</div>
+
+								<div class="row top-margin">
+									<div class="col-sm-6">
+										<label>Contraseña <span class="text-danger">*</span></label>
+										<input type="password" class="form-control">
+									</div>
+									<div class="col-sm-6">
+										<label>Confirmar contraseña<span class="text-danger">*</span></label>
+										<input type="password" class="form-control" name="password" required>
+									</div>
+								</div>
+
+								<hr>
+
+								<div class="row">
+									<div class="col-lg-8">
+										<label class="checkbox">
+											<input type="checkbox"> 
+											He leído <a href="page_terms.html">Términos y condiciones</a>
+										</label>                        
+									</div>
+									<div class="col-lg-4 text-right">
+										<button class="btn btn-action" type="submit">Registrar</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+
+				</div>
+				
+			</article>
+			<!-- /Article -->
+
+		</div>
+	</div>	<!-- /container -->
+	
+<!-- pie de pagina -->
+<section id="social">
+	<div class="container">
+		<div class="wrapper clearfix">
+			<div class="addthis_toolbox addthis_default_style">
+			<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+			<a class="addthis_button_tweet"></a>
+			<a class="addthis_button_linkedin_counter"></a>
+			<a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<footer id="footer" class="top-space">
+
+	<div class="footer1">
+		<div class="container">
+			<div class="row">
+				
+				<div class="col-md-3 widget">
+					<h3 class="widget-title">Contáctanos</h3>
+					<div class="widget-body">
+						<p>+52 427 122 1773<br>
+							<a href="mailto:#">manuelmc.ti20@utsjr.edu.mx</a><br>
+							<br>
+							Av La Palma No 125 Vista Hermosa, 76800 San Juan del Río, Qro.
+						</p>	
+					</div>
+				</div>
+
+				<div class="col-md-3 widget">
+					<h3 class="widget-title">Follow me</h3>
+					<div class="widget-body">
+						<p class="follow-me-icons">
+							<a href=""><i class="fa fa-twitter fa-2"></i></a>
+							<a href=""><i class="fa fa-dribbble fa-2"></i></a>
+							<a href=""><i class="fa fa-github fa-2"></i></a>
+							<a href=""><i class="fa fa-facebook fa-2"></i></a>
+						</p>	
+					</div>
+				</div>
+
+				<div class="col-md-6 widget">
+					<h3 class="widget-title">Descargo de responsabilidad</h3>
+					<div class="widget-body">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, dolores, quibusdam architecto voluptatem amet fugiat nesciunt placeat provident cumque accusamus itaque voluptate modi quidem dolore optio velit hic iusto vero praesentium repellat commodi ad id expedita cupiditate repellendus possimus unde?</p>
+						<p>Eius consequatur nihil quibusdam! Laborum, rerum, quis, inventore ipsa autem repellat provident assumenda labore soluta minima alias temporibus facere distinctio quas adipisci nam sunt explicabo officia tenetur at ea quos doloribus dolorum voluptate reprehenderit architecto sint libero illo et hic.</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="footer2">
+		<div class="container">
+			<div class="row">
+				
+				<div class="col-md-6 widget">
+					<div class="widget-body">
+						<p class="simplenav">
+							<a href="/">Home</a> | 
+							<a href="/about">Acerca de nosotros</a> |
+							<a href="/contact">Contáctanos</a> |
+							<b><a href="/signin">Iniciar sesión</a></b>
+						</p>
+					</div>
+				</div>
+
+				<div class="col-md-6 widget">
+					<div class="widget-body">
+						<p class="text-right">
+							Copyright &copy; 2023, Wolf Seekers Team. Designed by WST.
+						</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+</footer>	
+	
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="/libs/assets/js/headroom.min.js"></script>
+<script src="/libs/assets/js/jQuery.headroom.min.js"></script>
+<script src="/libs/assets/js/template.js"></script>
+</body>
+</html>
