@@ -1,41 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="app web para wolf seekers">
-	<meta name="author"      content="Wolf Seeker's Team">
-	
-	<title>Wolf Seekers-Contactanos</title>
-
-	<link rel="shortcut icon" href="/libs/assets/images/logo ws low.jpg">
-	
-	<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
-	<link rel="stylesheet" href="/libs/assets/css/bootstrap.min.css">
-	<link rel="stylesheet" href="/libs/assets/css/font-awesome.min.css">
-	<link rel="stylesheet" href="/libs/assets/css/bootstrap-theme.css" media="screen" >
-	<link rel="stylesheet" href="/libs/assets/css/main.css">
+    <%- include('components/head') %>
+	<title>Contactanos</title>
 </head>
 
 <body>
 <!-- barra de navegación-->
 <body class="home">
-	<div class="navbar navbar-inverse navbar-fixed-top headroom" >
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-				<a class="navbar-brand" href="/"><img src="/libs/assets/images/logo ws low50.jpg" alt="WolfSeekers">Wolf Seekers</a>
-			</div>
-			<div class="navbar-collapse collapse">
-				<ul class="nav navbar-nav pull-right">
-					<li class="active"><a href="/">Home</a></li>
-					<li><a href="/about">Acerca de nosotros</a></li>
-					<!--<li><a href="contact.html">Contáctanos</a></li>-->
-					<li><a class="btn" href="/signin">INICIAR SESIÓN</a></li>
-				</ul>
-			</div>
-		</div>
-	</div> 
+    <%- include('components/navbar') %>
+	
 	<!-- fin de barra de navegación-->
 
 	<header id="head" class="secondary"></header>

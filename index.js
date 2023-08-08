@@ -28,7 +28,7 @@ dotenv.config();
 
 // Iniciar el servidor
 http.Server(app).listen(port, () => {
-	console.log(`La aplicación está ejecutando en http://localhost:${port}`);
+	console.log(`Iniciado en http://localhost:${port}`);
 });
 
 // Establecer EJS como motor de vistas

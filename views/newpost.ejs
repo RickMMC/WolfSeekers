@@ -1,0 +1,59 @@
+``` <!DOCTYPE html>
+<html lang="es">
+<head>
+    <%- include('components/head') %>
+    <title>Nuevo Post</title>
+</head>
+    
+<body class="home">
+    <%- include('components/navbar') %>
+	<header id="" class=""><style> header {height: 100px; background-color: white;} </style></header>
+    <div class="container">
+        <ol class="breadcrumb">
+			<li><a href="/">Home</a></li>
+			<li class="active">Post</li>
+		</ol>
+        <article class="col-xs-12 maincontent">  
+        <header class="page-header">
+            <h1 class="page-title">Nueva Publicación</h1>
+        </header>
+    
+        <form action="/newpost" method="post">
+        <div class="top-margin">
+            <label>Nombre de la Compania</label>
+            <input type="text" class="" name="company" required>
+        </div>
+        <div class="top-margin">
+            <label>Id de Usuario</label>
+            <input type="text" class="" name="id_user" readonly value="<%= user.id %>">
+        </div>
+        <div class="top-margin">
+            <label>Correo electrónico<span class="text-danger">*</span></label>
+            <input type="email" class="" name="email" readonly value="<%= user.email %>">
+        </div>
+    
+        <div class="top-margin">
+            <div class="">
+                <label>Titulo<span class="text-danger">*</span></label>
+                <input type="text" class="" name="title" required>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="col-sm-12">
+                <textarea placeholder="Escribe tu publicación aquí..." class="form-control" rows="9" required name="content"></textarea>
+            </div>
+        </div>
+    
+        <hr>
+    
+        <div class="col-sm-6 text-right">
+            <div class="">
+                <button class="btn btn-action" type="submit">Publicar</button>
+            </div>
+        </div>
+    </div>
+
+    <%- include('components/pie') %>
+</body>
+</html>

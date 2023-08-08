@@ -1,0 +1,49 @@
+``` <!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('components/head') %>
+    <title>Editar Post</title>
+</head>
+<body>
+    <%- include('components/navbar') %>
+    <h1>Editar Post con el id: <%= post.id %></h1>
+    <form action="/editpost" method="post">
+        <div>
+            <label>ID del post</label>
+            <input type="text" class="" name="id" readonly value="<%= post.id %>">
+        </div>
+        <div>
+            <label>Nombre de la Compania</label>
+            <input type="text" class="" name="company" required value="<%= post.company %>">
+        </div>
+        <div class="">
+            <label>Id de Usuario</label>
+            <input type="text" class="" name="id_user" readonly value="<%= post.id_user %>">
+        </div>
+        <div class="top-margin">
+            <label>Correo electrónico<span class="text-danger">*</span></label>
+            <input type="email" class="" name="email" readonly value="<%= post.email %>">
+        </div>
+    
+        <div class="">
+            <div class="">
+                <label>Titulo<span class="text-danger">*</span></label>
+                <input type="text" class="" name="title" required value="<%= post.title %>">
+            </div>
+        </div>
+    
+        <div class="">
+            <div class="">
+                <textarea placeholder="Escribe tu publicación aquí..." class="form-control" rows="9" required name="content"><%= post.content %></textarea>
+            </div>
+        </div>
+    
+        <hr>
+    
+        <div class="">
+            <div class="">
+                <button class="" type="submit">Publicar</button>
+            </div>
+        </div>
+</body>
+</html>
